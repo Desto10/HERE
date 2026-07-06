@@ -6,8 +6,6 @@ public class Commercial extends Building{
 	public void getInput(Scanner input) {
 		System.out.println(" COMMERCIAL ");
 		
-		System.out.print("Enter siding type");
-		setSiding(input.next());
 		
 		double total = 0;
 		
@@ -15,7 +13,7 @@ public class Commercial extends Building{
 		for(int i = 0; i <= 3; i++) {
 			System.out.print("Enter size of room " + i + ": ");
 			total += input.nextDouble();
-			setsquareFeet(total);
+			setsquareFeet(total); 
 			
 		}
 		
